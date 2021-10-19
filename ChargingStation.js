@@ -2,14 +2,15 @@ class ChargingStation {
     constructor(location, chargingStationName) {
         this.location = location
         this.chargingStationName = chargingStationName
-        this.scooters = []
+        this.scooters = [] // this will collect the scooters that are 100% charged and then push to the app
+        this.lowBatteryScooters = [] // this will store scooters that are not 100%, a
     }
 
     setChargingStationName(ChargingStationName) {
         chargingStationName = "Bank"
     }
 
-    setLocation(location) {
+    setLocation(location) { // stores the location of the scooter
         location = "Princes St, London EC3V 3LA"
     }
 
@@ -17,35 +18,33 @@ class ChargingStation {
 
     }
 
-    dockStatus(scooterReady) {
+    dockStatus() {
         if (readyToUse = true) {
-            scooterReady = true
+            addScooter() // calls addScooter method
         }
         else {
             chargeScooter()
         }
     }
 
+    addScooter(scooterID){ // Adds the fully charged scooter to the scooters array
+        this.scooters.push(scooterID)
+    }
 
-    chargeScooter(Scooter) {
+    chargeScooter(scooterID) { 
         console.log("Starting to charge")
 
-        return new Promise(resolve => {
-            setTimeout(() => {
-                Scooter.batteryCharge = 100
-                Scooter.readyToUse = true
-                resolve ("Charge COMPLETE")
-            }, 6000)
-        }) // 6 seconds to fully charge
+        
 
 
     }
 
     checkBattery(readyToUse) {
-        batteryCharge = 0
+        batteryCharge = 100
 
         if (batteryCharge = 100) {
             readyToUse = true
+
         }
         else {
             readyToUse = false

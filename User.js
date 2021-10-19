@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 class User {
     
     constructor(username, password, age, location) {
@@ -12,23 +11,17 @@ class User {
         return this.age >= 18 ? true : false
     }
 
-    checkDetails() {
-        return this.username == ""; {
-        console.log('input username')
-    }
-       // console.log("Please input username");
+    checkUsername() {
+        return this.username == "";
         }
-        //return (this.password == "") {
-          //  console.log("Please input password");
-       // }
-        //return console.log("Login Complete");
-   // }
+        // username would be what the user types, which then gets sent to the APP to be stored in the Users class. 
+
+    checkPassword() {
+        return this.password == "";
+    }
+
 }
 
 module.exports = User
-=======
-TEST
-Duong change
 
-hello there
->>>>>>> 208044506c4cada88aa536fab21da6fc062a2f10
+// once the user has met the requirements, and completed making their account, then their username will be sent to the users array in the APP
