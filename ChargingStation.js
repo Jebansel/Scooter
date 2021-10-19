@@ -1,48 +1,60 @@
-class ChargingStation{
-    constructor (location, name ){
+class ChargingStation {
+    constructor(location, chargingStationName) {
         this.location = location
-        this.name = name
+        this.chargingStationName = chargingStationName
         this.scooters = []
     }
 
-    setName(name){
+    setChargingStationName(ChargingStationName) {
+        chargingStationName = "Bank"
+    }
+
+    setLocation(location) {
+        location = "Princes St, London EC3V 3LA"
+    }
+
+    spaceToDock() {
 
     }
 
-    setLocation(location){
-        
+    dockStatus(scooterReady) {
+        if (readyToUse = true) {
+            scooterReady = true
+        }
+        else {
+            chargeScooter()
+        }
     }
 
-    spaceToDock(){
 
-    }
-
-    dockStatus(){
-        
-    }
-    
-
-    chargeScooter(batteryCharge){
+    chargeScooter(Scooter) {
         console.log("Starting to charge")
 
-        await new Promise(resolve => setTimeout(resolve, 6000)) // 6 seconds to fully charge
+        return new Promise(resolve => {
+            setTimeout(() => {
+                Scooter.batteryCharge = 100
+                Scooter.readyToUse = true
+                resolve ("Charge COMPLETE")
+            }, 6000)
+        }) // 6 seconds to fully charge
 
-        console.log("Charge COMPLETE")
-        batteryCharge = 100
-        readyToUse = true
+
     }
 
-    checkBattery(readyToUse){
+    checkBattery(readyToUse) {
         batteryCharge = 0
 
-        if(batteryCharge = 100){
-            readyToUse =  true
+        if (batteryCharge = 100) {
+            readyToUse = true
         }
         else {
             readyToUse = false
             chargeScooter()
         }
-        
+
     }
 
+
+
 }
+module.exports = ChargingStation
