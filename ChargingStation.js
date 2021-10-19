@@ -19,7 +19,7 @@ class ChargingStation {
     }
 
     dockStatus() {
-        if (readyToUse = true) {
+        if (readyToUse === true) {
             addScooter() // calls addScooter method
         }
         else {
@@ -42,7 +42,7 @@ class ChargingStation {
     checkBattery(readyToUse) {
         batteryCharge = 100
 
-        if (batteryCharge = 100) {
+        if (batteryCharge === 100) {
             readyToUse = true
 
         }

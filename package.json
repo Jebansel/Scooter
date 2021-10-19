@@ -1,7 +1,6 @@
 {
   "name": "scooter",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -15,5 +14,6 @@
   "bugs": {
     "url": "https://github.com/Jebansel/Scooter/issues"
   },
-  "homepage": "https://github.com/Jebansel/Scooter#readme"
+  "homepage": "https://github.com/Jebansel/Scooter#readme",
+  "description": ""
 }

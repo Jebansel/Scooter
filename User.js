@@ -7,17 +7,7 @@ class User {
         this.location = location
     }
 
-    isOverAge() {
-        return this.age >= 18 ? true : false
-    }
 
-    checkUsername() {
-        return this.username == "";
-    }
-
-    checkPassword() {
-        return this.password == "";
-    }
 
 }
 
