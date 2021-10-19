@@ -15,8 +15,6 @@ class Scooter {
             console.log("lovely day");
         }
     }
-    
-
 
 }
 const scooter1 = new Scooter( 113, 11,)
