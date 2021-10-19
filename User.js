@@ -11,9 +11,13 @@ class User {
         return this.age >= 18 ? true : false
     }
 
-    checkDetails() {
+    checkUsername() {
         return this.username == "";
         }
+
+    checkPassword() {
+        return this.password == "";
+    }
 
 }
 
