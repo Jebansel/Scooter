@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class User {
     
     constructor(username, password, age, location) {
@@ -25,3 +26,9 @@ class User {
 }
 
 module.exports = User
+=======
+TEST
+Duong change
+
+hello there
+>>>>>>> 208044506c4cada88aa536fab21da6fc062a2f10
