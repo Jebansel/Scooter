@@ -1,23 +1,24 @@
 class Scooter {
+    static scooter = []
     constructor(scooterID, battery){
         this.scooterID = scooterID;
         this.battery = battery;
         this.isDocked = ""; 
         this.range = this.battery * 0.32;
-    
-        // this.conctructor.push(this);
+        this.constructor.scooter.push(this)      
     }
     needToCharge(){
-        if(battery <= 10){
-            throw new Error("Scooter need to be charged in 10 second")
+        if(this.battery <= 10){
+            console.log("This scooter need to be charged in less than 10 minutes");
         }
         else{
-            this.battery = battery; 
+            console.log("lovely day");
         }
     }
     
 
 
 }
-let scooter1 = new Scooter( 113, 2)
+const scooter1 = new Scooter( 113, 11,)
 console.log(scooter1);
+console.log(scooter1.needToCharge())
