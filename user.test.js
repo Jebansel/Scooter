@@ -8,11 +8,7 @@ describe ('age', () => {
         expect (user2.isOverAge()).toBe(false);
 
 })
-    //test ('Should return error message', () => {
-      //  expect (user1.checkDetails()).toBe('Login Complete');
-  //  })
-
-    test ('Check if null', () => {
+       test ('Check if null', () => {
         expect (user2.checkDetails()).toBe(true);
         expect (user1.checkDetails()).toBe(false);
     })
