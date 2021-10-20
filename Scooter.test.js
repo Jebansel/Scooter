@@ -1,12 +1,12 @@
 const Scooter = require("./Scooter")
 
-const Scooter1 = new Scooter (11234);
+const Scooter11234 = new Scooter (11234);
 
 describe('promise timeout', () => {
     test("it should return the promise and resolve with 'Charge COMPLETE'", () => {
       // Jest requires us to "return" the function that produces the promise
       return (
-        Scooter1.charge()
+        Scooter11234.charge()
           // resolve = success
           .then((result) => {
             expect(result).toBe('Charge COMPLETE');
@@ -20,7 +20,7 @@ describe('promise timeout', () => {
     test("it should return the promise and resolve with '50% battery level'", () => {
       // Jest requires us to "return" the function that produces the promise
       return (
-        Scooter1.drainBattery()
+        Scooter11234.drainBattery()
           // resolve = success
           .then((result) => {
             expect(result).toBe('50% battery level');
@@ -34,7 +34,7 @@ describe('promise timeout', () => {
     test("it should return the promise and resolve with '5% battery level'", () => {
       // Jest requires us to "return" the function that produces the promise
       return (
-        Scooter1.batteryStatus()
+        Scooter11234.batteryStatus()
           // resolve = success
           .then((result) => {
             expect(result).toBe('5% battery level');

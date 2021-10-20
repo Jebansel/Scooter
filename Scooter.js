@@ -47,16 +47,16 @@ class Scooter {
     
 
 }
-const Scooter1 = new Scooter (11234);
-Scooter1.charge() // Asynchronous 
+const Scooter11234 = new Scooter (11234);
+Scooter11234.charge() // Asynchronous 
 .then((str) => {
     console.log(str); 
   });   
-  Scooter1.drainBattery() // Asynchronous 
+  Scooter11234.drainBattery() // Asynchronous 
 .then((str) => {
     console.log(str); 
   });  
-  Scooter1.batteryStatus() // Asynchronous 
+  Scooter11234.batteryStatus() // Asynchronous 
   .then((str) => {
       console.log(str); 
     });
