@@ -25,6 +25,15 @@ class Scooter {
             }, 1000)
         }) // 1 seconds to fully charge
     }
+    drainBattery() {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                this.batteryCharge = 50
+                resolve("50% battery level")
+
+            }, 3000)
+        }) // 3 seconds to fully charge
+    }
 
     
 

@@ -17,4 +17,18 @@ describe('promise timeout', () => {
           })
       );
     });
+    test("it should return the promise and resolve with '50% battery level'", () => {
+      // Jest requires us to "return" the function that produces the promise
+      return (
+        Scooter1.drainBattery()
+          // resolve = success
+          .then((result) => {
+            expect(result).toBe('50% battery level');
+          })
+          // reject = catch
+          .catch((error) => {
+            expect(error).toBe('keep going');
+          })
+      );
+    });
   });
