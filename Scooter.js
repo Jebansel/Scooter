@@ -30,14 +30,5 @@ const Scooter1 = new Scooter (11234);
 Scooter1.charge() // Asynchronous 
 .then((str) => {
     console.log(str); 
-  });
-   
-
-
-
-  
-
-  
-
-
-// module.exports = Scooter
+  });   
+module.exports = Scooter
