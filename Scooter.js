@@ -20,6 +20,7 @@ class Scooter {
         return new Promise(resolve => {
             setTimeout(() => {
                 this.batteryCharge = 100
+                this.range = 100*0.32
                 resolve("Charge COMPLETE")
                 this.needToCharge()
 
@@ -30,6 +31,7 @@ class Scooter {
         return new Promise(resolve => {
             setTimeout(() => {
                 this.batteryCharge = 50
+                this.range = this.batteryCharge * 0.32
                 resolve("50% battery level")
                 console.log(Scooter);
                 this.needToCharge()
@@ -40,6 +42,7 @@ class Scooter {
         return new Promise(resolve => {
             setTimeout(() => {
                 this.batteryCharge = 5
+                this.range = this.batteryCharge * 0.32
                 resolve("5% battery level")
                 console.log(Scooter);
                 this.needToCharge()
