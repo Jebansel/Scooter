@@ -4,7 +4,7 @@ class Scooter {
         this.scooterID = scooterID;
         this.batteryCharge = 100;
         this.isDocked = true;
-        // this.range = this.battery * 0.32;
+        this.range = 32;
         this.constructor.scooter.push(this)
     }
     needToCharge() {
@@ -21,6 +21,7 @@ class Scooter {
             setTimeout(() => {
                 this.batteryCharge = 100
                 resolve("Charge COMPLETE")
+                this.needToCharge()
 
             }, 1000)
         }) // 1 seconds to fully charge
@@ -31,6 +32,7 @@ class Scooter {
                 this.batteryCharge = 50
                 resolve("50% battery level")
                 console.log(Scooter);
+                this.needToCharge()
             }, 3000)
         }) // 3 seconds to fully charge
     }
@@ -40,6 +42,7 @@ class Scooter {
                 this.batteryCharge = 5
                 resolve("5% battery level")
                 console.log(Scooter);
+                this.needToCharge()
             }, 4000)
         }) // 4 seconds to fully charge
     }
