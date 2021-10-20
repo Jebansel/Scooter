@@ -29,7 +29,20 @@ class ElectricalScooterHireApp {
     }
 
     checkForScooters() {
-        // if there are charged scooters at the charging station, then their scooterID will be sent to the scooter array, where then they can then be sent to the user
+        // if there are charged scooters at the charging station, then their scooterID will be sent to the scooter array, where the user can see them
+
+        // Step 1: check the scooters array for any scooters
+        // Step 2: if scooters array is empty, tell user "No scooters available"
+        // Step 3: otherwise, return scooter in position 1 in the array to the user
+        // Step 4: Remove scooter from position 1 from the array
+
+        if(this.scooters.length===0){
+            console.log("No scooters available")
+        }
+        else{
+            console.log("This is your scooter:" + this.scooters[0])
+            this.scootersInUse.push(this.scooters.shift())
+        }
 
 
     }

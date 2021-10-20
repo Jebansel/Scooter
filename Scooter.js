@@ -21,9 +21,12 @@ class Scooter {
             setTimeout(() => {
                 this.batteryCharge = 100
                 resolve("Charge COMPLETE")
+
             }, 1000)
         }) // 1 seconds to fully charge
     }
+
+    
 
 }
 const Scooter1 = new Scooter (11234);
