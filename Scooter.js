@@ -1,10 +1,10 @@
 class Scooter {
     static scooter = []
-    constructor(scooterID, battery) {
+    constructor(scooterID) {
         this.scooterID = scooterID;
-        this.battery = battery;
-        this.isDocked = "";
-        this.range = this.battery * 0.32;
+        this.battery = 100;
+        this.isDocked = true;
+        // this.range = this.battery * 0.32;
         this.constructor.scooter.push(this)
     }
     needToCharge() {
@@ -19,16 +19,25 @@ class Scooter {
     charge() {
         return new Promise(resolve => {
             setTimeout(() => {
-                // batteryCharge = 100
-                // readyToUse = true
+                this.batteryCharge = 100
                 resolve("Charge COMPLETE")
-            }, 6000)
-        }) // 6 seconds to fully charge
+            }, 1000)
+        }) // 1 seconds to fully charge
     }
 
 }
-const scooter1 = new Scooter(113, 11,)
-console.log(scooter1);
-console.log(scooter1.needToCharge())
+const Scooter1 = new Scooter (11234);
+Scooter1.charge() // Asynchronous 
+.then((str) => {
+    console.log(str); 
+  });
+   
 
-module.exports = Scooter
+
+
+  
+
+  
+
+
+// module.exports = Scooter

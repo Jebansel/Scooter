@@ -8,17 +8,17 @@ class ElectricalScooterHireApp {
 
 
 
-    static validateUser(age,username,password) {
+    static validateUser(age, username, password) {
         if (age >= 18 && username !== "" && password !== "") {
             return true
-            
+
         }
 
         return false
     }
 
     addUser(username) { // Adds the username to the users array
-        if(validateUser(age,username, password)){
+        if (validateUser(age, username, password)) {
             this.users.push(username)
         }
         console.log("Validation Failed")
