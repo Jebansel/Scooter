@@ -37,11 +37,6 @@ class ElectricalScooterHireApp {
     // checkUserLocation(){
     // Not entirely relevant right now
     // }
-
-
-
-
-
-
 }
 
+module.exports = ElectricalScooterHireApp
