@@ -5,15 +5,16 @@ class ChargingStation {
         this.scooters = [] // this will collect the scooters that are 100% charged and then push to the app
         this.lowBatteryScooters = [] // this will store scooters that are not 100%
         this.scooterInUse = [] // this will store scooter in use
+        
     }
 
-    setChargingStationName(ChargingStationName) {
-        chargingStationName = "Bank"
-    }
+    // setChargingStationName(ChargingStationName) {
+    //     chargingStationName = "Bank"
+    // }
 
-    setLocation(location) { // stores the location of the scooter
-        location = "Princes St, London EC3V 3LA"
-    }
+    // setLocation(location) { // stores the location of the scooter
+    //     location = "Princes St, London EC3V 3LA"
+    // }
 
     spaceToDock() {
 

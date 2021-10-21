@@ -7,7 +7,7 @@ class User {
         this.location = location
     }
 
-
+    
 
 }
 

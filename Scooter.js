@@ -5,6 +5,7 @@ class Scooter {
         this.batteryCharge = 100;
         this.isDocked = true;
         this.range = 32;
+        this.scooterIsbroken = false;
         this.constructor.scooter.push(this)
     }
     needToCharge() {
@@ -50,6 +51,8 @@ class Scooter {
         }) // 4 seconds to fully charge
     }
 
+
+    
     
 
 }
@@ -67,7 +70,7 @@ Scooter11234.charge() // Asynchronous
       console.log(str); 
     });
 
-console.log(Scooter)
+
 
 // console.log(Scooter.drainBattery())
 module.exports = Scooter
