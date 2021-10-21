@@ -15,5 +15,8 @@
     "url": "https://github.com/Jebansel/Scooter/issues"
   },
   "homepage": "https://github.com/Jebansel/Scooter#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
 }
