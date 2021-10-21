@@ -81,6 +81,7 @@ class ElectricalScooterHireApp {
     // Not entirely relevant right now
     // }
 }
+const Scooter11234 = new Scooter (11234);
 Scooter11234.repairScooter() // Asynchronous 
 .then((str) => {
     console.log(str); 
