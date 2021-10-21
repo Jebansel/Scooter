@@ -1,5 +1,6 @@
 const User = require("./User")
 const Scooter = require("./Scooter")
+const ChargingStation = require("./ChargingStation")
 
 
 class ElectricalScooterHireApp {
